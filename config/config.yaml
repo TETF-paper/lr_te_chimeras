@@ -1,0 +1,36 @@
+datasets:
+  heads_1DONP_1: 
+    uri: "ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/034/SRR19355634/SRR19355634_1.fastq.gz"
+  heads_1DONP_2: 
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/033/SRR19355633/SRR19355633_1.fastq.gz
+  heads_1DONP_3: 
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/032/SRR19355632/SRR19355632_1.fastq.gz
+  heads_1DONP_4:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/031/SRR19355631/SRR19355631_1.fastq.gz
+  heads_1DONP_nonSizeSelected_5:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/036/SRR19355636/SRR19355636_1.fastq.gz
+  heads_1DONP_nonSizeSelected_6:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/035/SRR19355635/SRR19355635_1.fastq.gz
+  ovaries_1DONP_1:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/039/SRR19355639/SRR19355639_1.fastq.gz
+  ovaries_1DONP_3:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/037/SRR19355637/SRR19355637_1.fastq.gz
+  embryo14_16hrs_1DONP_1:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/030/SRR19355630/SRR19355630_1.fastq.gz
+  embryo14_16hrs_1DONP_2:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/029/SRR19355629/SRR19355629_1.fastq.gz
+  embryo14_16hrs_1DONP_3:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/028/SRR19355628/SRR19355628_1.fastq.gz
+  embryo18_20hrs_1DONP_1:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/027/SRR19355627/SRR19355627_1.fastq.gz
+  embryo18_20hrs_1DONP_2:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/026/SRR19355626/SRR19355626_1.fastq.gz
+  embryo18_20hrs_1DONP_3:
+    uri: ftp://ftp.sra.ebi.ac.uk/vol1/fastq/SRR193/040/SRR19355640/SRR19355640_1.fastq.gz
+
+  
+  
+#derived from mal2017/tetf_refs@fcfc440
+reference_txome: resources/transcripts-plus-tes.fasta.gz
+
+gene_lookup: resources/fbgn_fbtr_fbpp_expanded_fb_2024_02.tsv.gz

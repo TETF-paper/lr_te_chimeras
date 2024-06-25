@@ -1,0 +1,11 @@
+configfile: "config/config.yaml"
+
+include: "rules/download.smk"
+include: "rules/align.smk"
+include: "rules/chimerics.smk"
+
+rule all:
+    input:
+        expand("results/fastq/{d}.fastq.gz", d=config["datasets"]),
+        expand("results/minimap2/{d}.sorted.bam", d=config["datasets"]),
+        rules.all_possible_te_chimeras.input,
