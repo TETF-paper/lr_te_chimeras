@@ -1,8 +1,7 @@
-library(GenomicAlignments)
 library(Rsamtools)
 library(tidyverse)
 
-bf <- Rsamtools::BamFile(ifelse(exists("snakemake"),snakemake@input$bam,"results/minimap2/heads_1DONP_1.sorted.bam"))
+bf <- Rsamtools::BamFile(ifelse(exists("snakemake"),snakemake@input$bam,"results/minimap2/embryo18_20hrs_1DONP_1.sorted.bam"))
 
 p1 <- ScanBamParam(what=c("rname"),tag = "SA")
 res1 <- scanBam(bf, param=p1)

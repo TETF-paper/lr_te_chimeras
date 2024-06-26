@@ -1,6 +1,8 @@
 rule align_to_txome:
     """
-    see https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6668388/
+    see params from https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6668388/
+    https://github.com/lh3/minimap2/issues/1091
+    https://github.com/lh3/minimap2/issues/340
     """
     input:
         fq = rules.dl.output,
@@ -8,11 +10,11 @@ rule align_to_txome:
     output:
         temp("results/minimap2/{d}.sam")
     threads:
-        48
+        64
     resources:
-        mem_mb = 24000,
-        runtime = 120,
-        cpus = 48
+        mem_mb = 48000,
+        runtime = 360,
+        cpus = 64
     priority:
         3
     singularity:
@@ -27,11 +29,11 @@ rule sort_sam:
         bam = "results/minimap2/{d}.sorted.bam",
         bai = "results/minimap2/{d}.sorted.bam.bai"
     threads:
-        8
+        24
     resources:
-        mem_mb = 16000,
+        mem_mb = 24000,
         runtime = 60,
-        cpus = 8
+        cpus = 24
     priority:
         4
     singularity:
