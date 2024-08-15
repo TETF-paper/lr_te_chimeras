@@ -11,7 +11,7 @@ rule find_possible_te_chimeras:
     resources:
         mem_mb = 24000,
         runtime = 120,
-        cpus = 1
+        cpus_per_task = 1
     script:
         "../scripts/find_possible_te_chimeras.R"
 

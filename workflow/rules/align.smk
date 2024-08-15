@@ -14,7 +14,7 @@ rule align_to_txome:
     resources:
         mem_mb = 48000,
         runtime = 360,
-        cpus = 64
+        cpus_per_task = 64
     priority:
         3
     singularity:
@@ -33,7 +33,7 @@ rule sort_sam:
     resources:
         mem_mb = 24000,
         runtime = 60,
-        cpus = 24
+        cpus_per_task = 24
     priority:
         4
     singularity:
